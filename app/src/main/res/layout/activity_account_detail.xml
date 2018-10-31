@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    tools:context=".AccountDetail">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Label"
+        android:id="@+id/tvName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="30dp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="30dp"
+        android:text="expense" />
+
+    <EditText
+        android:id="@+id/etLabel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@+id/tvName"
+        android:layout_toRightOf="@+id/tvName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvAge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@+id/tvEmail"
+        android:layout_toRightOf="@+id/tvEmail"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/etCount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvAge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toEndOf="@+id/tvAge"
+        android:layout_toRightOf="@+id/tvAge"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="Close" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@id/btnClose"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@id/btnSave"
+        android:text="Delete" />
+
+</RelativeLayout>

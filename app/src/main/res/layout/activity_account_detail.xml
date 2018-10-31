@@ -4,18 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="10dip"
     tools:context=".AccountDetail">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/timg1" />
+
     <TextView
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Label"
+        android:text="Expense Type:"
         android:id="@+id/tvName"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="6dp"
+        android:textSize="18sp"
         android:layout_marginTop="30dp" />
 
     <TextView
@@ -27,11 +35,12 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="6dp"
         android:layout_marginTop="30dp"
-        android:text="Date" />
+        android:textSize="18sp"
+        android:text="Date:" />
 
     <TextView
         android:id="@+id/tvAge"
-        android:layout_width="60dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvEmail"
         android:layout_alignParentStart="true"
@@ -39,17 +48,18 @@
         android:layout_marginStart="6dp"
         android:layout_marginLeft="6dp"
         android:layout_marginTop="30dp"
-        android:text="expense" />
+        android:textSize="18sp"
+        android:text="Expense:" />
 
     <EditText
         android:id="@+id/etLabel"
-        android:layout_width="200dp"
+        android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/tvEmail"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="58dp"
         android:layout_marginBottom="-10dp"
@@ -60,13 +70,13 @@
 
     <EditText
         android:id="@+id/etDate"
-        android:layout_width="200dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_above="@id/tvAge"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="58dp"
         android:layout_marginBottom="-10dp"
@@ -76,13 +86,13 @@
 
     <EditText
         android:id="@+id/etCount"
-        android:layout_width="200dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/tvAge"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="-10dp"
@@ -92,33 +102,36 @@
         android:inputType="number" />
 
     <Button
-        android:id="@+id/btnClose"
+        android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
-        android:text="Close" />
+        android:layout_toLeftOf="@id/btnSave"
+        android:text="Delete"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="15dp"
-        android:layout_toLeftOf="@id/btnClose"
-        android:text="Save" />
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:textSize="18sp" />
 
     <Button
-        android:id="@+id/btnDelete"
+        android:id="@+id/btnClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
-        android:layout_toLeftOf="@id/btnSave"
-        android:text="Delete" />
+        android:layout_toRightOf="@id/btnSave"
+        android:text="Close"
+        android:textSize="18sp" />
+
 
 </RelativeLayout>
